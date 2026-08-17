@@ -1,0 +1,10 @@
+name=Cisterns
+id=zodi_cisterns
+description=Stone-built rainwater collectors. Higher capacity than their wooden counterparts.
+author=Zodi_Kid
+poster=poster.png
+icon=icon.png
+modversion=1.00
+versionMin=42.0
+pack=cistern
+tiledef=cistern 5002

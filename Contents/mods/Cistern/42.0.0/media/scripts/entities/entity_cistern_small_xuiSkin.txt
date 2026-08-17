@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_CisternSmall
+        {
+            LuaWindowClass = ISEntityWindow,
+            DisplayName = CisternSmall,
+            Icon = Build_CisternSmall,
+        }
+    }
+}

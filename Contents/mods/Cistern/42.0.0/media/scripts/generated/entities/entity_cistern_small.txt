@@ -1,0 +1,88 @@
+module Base
+{
+    entity CisternSmall
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_CisternSmall,
+            uiEnabled = false,
+        }
+		component ContextMenuConfig
+        {
+            contextEntry
+            {
+                menu = CloseLid,
+                customFunction = ContextMenuCode.OpenCloseLid,
+                extraParam = cistern_small_4,
+                time = 10,
+            }
+        }
+		component FluidContainer
+        {
+            ContainerName = Collector,
+            Capacity = 250.0,
+            RainFactor = 0.4,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 0.0,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = cistern_small_0,
+                }
+            }
+
+        }
+        component CraftRecipe
+        {
+            timedAction = Make_With_Brick,
+            time = 50,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:30,
+            category = Outdoors,
+
+            Tooltip = Tooltip_craft_cistern,
+            inputs
+            {
+				item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 12 [Base.StoneBlock],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+				item 4 [Base.Plank],
+            }
+        }
+    }
+	entity CisternSmallClosed
+    {
+        component ContextMenuConfig
+        {
+            contextEntry
+            {
+                menu = OpenLid,
+                customFunction = ContextMenuCode.OpenCloseLid,
+                extraParam = cistern_small_0,
+                time = 15,
+            }
+        }
+        component FluidContainer
+        {
+            ContainerName = Collector,
+            Capacity = 250.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 0.0,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = cistern_small_4,
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+module Base
+{
+    entity Cistern
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_Cistern,
+            uiEnabled = false,
+        }
+		component FluidContainer
+        {
+            ContainerName = Collector,
+            Capacity = 800.0,
+            RainFactor = 0.4,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 0.0,
+        }
+        component SpriteConfig
+        {
+            face SINGLE
+            {
+                layer
+                {
+                    row = cistern_0,
+                }
+            }
+
+        }
+        component CraftRecipe
+        {
+            timedAction = Make_With_Brick,
+            time = 90,
+            SkillRequired = Masonry:2,
+            xpAward = Masonry:30,
+            category = Outdoors,
+
+            Tooltip = Tooltip_craft_cistern,
+            inputs
+            {
+                item 1 tags[base:diggrave] mode:keep flags[MayDegradeLight],
+				item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 30 [Base.StoneBlock],
+                item 1 tags[base:concrete] flags[DontRecordInput],
+            }
+        }
+    }
+}
