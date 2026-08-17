@@ -1,0 +1,6 @@
+version=1
+id=3785082782
+title=Cisterns
+description=Stone-built rainwater collectors with higher capacity than their wooden counterparts.
+tags=Build 42;Balance;Building;Farming;Misc;Realistic
+visibility=public
