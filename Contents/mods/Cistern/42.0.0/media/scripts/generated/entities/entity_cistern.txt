@@ -30,9 +30,9 @@ module Base
         component CraftRecipe
         {
             timedAction = Make_With_Brick,
-            time = 90,
-            SkillRequired = Masonry:2,
-            xpAward = Masonry:30,
+            time = 200,
+            SkillRequired = Masonry:5,
+            xpAward = Masonry:60,
             category = Outdoors,
 
             Tooltip = Tooltip_craft_cistern,

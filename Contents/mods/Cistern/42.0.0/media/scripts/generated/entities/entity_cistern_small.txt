@@ -40,7 +40,7 @@ module Base
         component CraftRecipe
         {
             timedAction = Make_With_Brick,
-            time = 50,
+            time = 100,
             SkillRequired = Masonry:2,
             xpAward = Masonry:30,
             category = Outdoors,
@@ -51,7 +51,7 @@ module Base
 				item 1 tags[base:masonstrowel] mode:keep flags[Prop1;MayDegradeLight],
                 item 12 [Base.StoneBlock],
                 item 1 tags[base:concrete] flags[DontRecordInput],
-				item 4 [Base.Plank],
+				item 3 [Base.Plank],
             }
         }
     }

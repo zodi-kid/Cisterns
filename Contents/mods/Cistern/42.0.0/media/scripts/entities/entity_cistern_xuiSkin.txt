@@ -5,7 +5,7 @@ module Base
         entity ES_Cistern
         {
             LuaWindowClass = ISEntityWindow,
-            DisplayName = Cistern,
+            DisplayName = Underground Cistern,
             Icon = Build_Cistern,
         }
     }
