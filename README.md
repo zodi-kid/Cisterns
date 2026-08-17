@@ -2,7 +2,7 @@
 
 This repository contains the files and code for a Project Zomboid mod.
 
-The mod adds two new 'entities' (buildable objects) to the game: a base cistern and a smaller cistern.
+The mod adds two new 'entities' (buildable objects) to the game: a base cistern and a smaller cistern. They behave similarly to vanilla rain collectors, with different capacity, and materials and skill requirements.
 
 This mod complies with The Indie Stone's modding policy and Spiffo's Workshop rules.
 
