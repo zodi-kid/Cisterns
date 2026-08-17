@@ -1,6 +1,6 @@
 module Base
 {
-    entity Cistern
+    entity Underground Cistern
     {
         component UiConfig
         {
@@ -30,8 +30,8 @@ module Base
         component CraftRecipe
         {
             timedAction = Make_With_Brick,
-            time = 90,
-            SkillRequired = Masonry:2,
+            time = 200,
+            SkillRequired = Masonry:5,
             xpAward = Masonry:30,
             category = Outdoors,
 
